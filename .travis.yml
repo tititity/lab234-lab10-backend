@@ -1,7 +1,7 @@
 language: java
 before_install:
 - sudo rm /usr/local/bin/docker-compose
-- curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname
+- curl -L https://github.com/docker/compose/releases/download/1.20.1/docker-compose-`uname
   -s`-`uname -m` > docker-compose
 - chmod +x docker-compose
 - sudo mv docker-compose /usr/local/bin
@@ -19,7 +19,6 @@ cache:
   directories:
   - "$HOME/.m2"
 env:
- DOCKER_COMPOSE_VERSION: 1.20.1
  global:
   - secure: ZrmcSbD2rQmOI5NVa0qxlRdYkuQh065IT951t9NV7+xFKMF2JTG6fpcEEaSghdGucgdNEKJe7Vrk69UQCbrwpIms1DS1KgfJ1kqZvrlbhqeO9ac0Dmu/OtlpWI9J8TLKNEGAjeDQd+1AyxRH8e5Z6nYlWCt0ZWdfl5KJiYSmWJFTdavCzdq5eNL3LYGX5sVRqVI8Gg3sIYJNGieugR1XZSNWzK5/mpcd3Xz2f+cnEZM0TWp/l2RbTQhtZgKywVrlELwZ2hl8xfpgikup1UWeTiJo0Cwx5gJqQ1ps6QCbW81yw8KJqnYKRJUjby1j4kKzoekpxgftcS2bje7jxDbB/MZWodctozEnHCmzaQY1XFky6sKSuqkE7yZ5a3HycSo+BKG/ioTz7+8onopiyYl5x0mV+KVLaYFHdKfGwFd3s+fKWiD9Zjk2RK8oOifCDxuxCU1Ja9b2TwDe5gj95ed8kAGb8tCN/Ebk8D6rCZmTBr15K2TfPrFVB5r60bLPlzGgzv2mfCx7AjjsQmtobaRoNNheziwiyZmjRoyPU5Wh4RrskP8R2j8CyRePvoIy2H+BDyX6ZGg98MdoBk0VsW0XKE/NpKogd3vRqt8jOBLYnIn3jGnLyH/oFatwk/7eEUVpHnjHCXy9R7AtXKypNyLsc/4U+u/Ui7XFGtaDVbbaEMw=
   - secure: n4L/1/C5UW7zHkidc8/DW8ALYbK2kfzrWtFxXgwNyEejjGMOar2jygOwbdcwExL+kyn3LYrwm0f3bHmDsdSWXcsiGAANHQXR5QPTQ+MEiWFYXLpP/nu6M3idmFd4Sq1OIY/jHPhJYrxSCyRNxkp2rOL7I02FLarHxJq8nophp6pxVUp+m+MZ7EgmsWnaPbAk0LVSjK4WpOGE0Q+yOuqofKarfoqgvfxMjn5U13hjsFSSAKX5uCArVIRcDXUvxu+ATgJs2aftPmF5VeykNnKOrZErN4O/qHV5cxL+jFgmgSa2tnE8WShgL3AXOHbdNQBeWVBBJVxBxdGNh6ZVOsKVr/jN3mSGVqmWcHdQ3ZZNEWgInrIoidsgRSnlk0jVLxVGJMhiY/rrkEvzkIX0emt7FE8zzHUjFo7dlv9wADsXuUlIexQWSbXcV0YspLEVgan4uEGhoMf8F8CWhbVQjF6I3afgNoAzV2YhMPwsZJMYxjZ3Krsp65Z0qCbIxl3dAYbRHd1E1Ll61KE0JZAmi9yelzm/p8fwXyiBQ0VNtGcxQUugTFmrf9ys4WCUjef834I7J0nCOErhbLoUfHyuARZYl0X/HTf42GCshl0unwtP4H+T1nGVLLOpGGlxWThvdHLSK59vuf1SDMCtfCc4obZm38mpmRzii4983oPpuW8zaqk=
