@@ -76,7 +76,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>lab10-backend</finalName>
+		<finalName>backend</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
